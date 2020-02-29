@@ -1,7 +1,7 @@
 
 
-## [Overview of Ansible](#header13)
-  ### [What is Ansible?](#header16)
+## [Overview of Ansible](#header-n13)
+  ### [What is Ansible?](#header-n16)
   ### [Ansible Components & Architecture](#header33)
 ## [ANSIBLE INSTALLATION:](#header86)
   Create Instances 
