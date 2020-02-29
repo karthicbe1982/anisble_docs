@@ -1,10 +1,9 @@
 
 
-### [Overview of Ansible](#header 13)
- 
-   ### [What is Ansible?](#header16)
-  Ansible Components & Architecture
-ANSIBLE INSTALLATION:
+## [Overview of Ansible](#header 13)
+  ### [What is Ansible?](#header16)
+  ### [Ansible Components & Architecture](#header33)
+## [ANSIBLE INSTALLATION:](#header86)
   Create Instances 
   SSH ConnectionAssigning 
   SUDO PrivilegesInstalling 
@@ -30,7 +29,8 @@ You can use Ansible to deploy applications, for configuration management, for wo
     Ansible Is Agentless
 
 Ansible is built around an agentless architecture. Typically, Ansible connects to the hosts it manages using OpenSSH or WinRM and runs tasks, often (but not always) by pushing out small programs called Ansible modules to those hosts. These programs are used to put the system in a specific desired state. Any modules pushed are removed when Ansible is finished with its tasks. It is possible to start using Ansible almost immediately, because no special agents need to be approved for use and then deployed to the managed hosts. Because there are no agents and no additional custom security infrastructure, Ansible is more efficient and more secure than other alternatives.
-Ansible Components & Architecture
+
+# Ansible Components & Architecture
 
     Control Nodes (Ansible-server)	
 
@@ -83,9 +83,7 @@ When used in a task, a module generally ensures that some particular thing about
 ​	!Screenshot_20190226-150243~2](https://gagankubsad.github.io/ansible_docs/images/Screenshot_20190226-150243~2.png)
 
  
-
- 
-ANSIBLE INSTALLATION:
+# ANSIBLE INSTALLATION:
 Create Instances
 
 For Ansible create 2 ec2 instances of RedHat in AWS. Name the instances as Control-Node & Managed-Host.
