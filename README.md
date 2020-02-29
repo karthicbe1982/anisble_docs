@@ -1,7 +1,8 @@
 
 
 ### [Overview of Ansible](#header 13)
-  What is Ansible?
+ 
+   ### [What is Ansible?](#header16)
   Ansible Components & Architecture
 ANSIBLE INSTALLATION:
   Create Instances 
@@ -12,7 +13,7 @@ ANSIBLE INSTALLATION:
  Inventory
 
 # Overview of Ansible
-# What is Ansible?
+## What is Ansible?
 
 Ansible is an open source automation platform. It's a simple automation language that can perfectly describe an IT application infrastructure in Ansible Playbooks. It's also an automation engine that runs Ansible Playbooks. ​	
 
