@@ -10,7 +10,8 @@ ANSIBLE INSTALLATION:
   Ansible Package
  Ansible.cfg
  Inventory
-Overview of Ansible
+
+# Overview of Ansible
 # What is Ansible?
 
 Ansible is an open source automation platform. It's a simple automation language that can perfectly describe an IT application infrastructure in Ansible Playbooks. It's also an automation engine that runs Ansible Playbooks. ​	
