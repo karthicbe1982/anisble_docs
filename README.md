@@ -1,16 +1,5 @@
 
 
-## [Overview of Ansible](#header-n13)
-  ### [What is Ansible?](#header-n16)
-  ### [Ansible Components & Architecture](#header33)
-## [ANSIBLE INSTALLATION:](#header86)
-  Create Instances 
-  SSH ConnectionAssigning 
-  SUDO PrivilegesInstalling 
-  Ansible Package
- Ansible.cfg
- Inventory
-
 # Overview of Ansible
 ## What is Ansible?
 
@@ -18,59 +7,52 @@ Ansible is an open source automation platform. It's a simple automation language
 
 Ansible can manage powerful automation tasks, and can adapt to many different workflows and environments. At the same time, new users of Ansible can very quickly use it to become productive.
 
-    Ansible Is Simple
+ ### Ansible Is Simple
 
 Ansible Playbooks provide human-readable automation. This means that your playbooks are automation tools that are also easy for humans to read, comprehend, and change. No special coding skills are required to write them. Playbooks execute tasks in order. The simplicity of playbook design makes them usable by every team. This allows people new to Ansible to get productive quickly.
 
-    Ansible Is Powerful
+ ### Ansible Is Powerful
 
 You can use Ansible to deploy applications, for configuration management, for workflow automation, and for network automation. Ansible can be used to orchestrate the entire application life cycle.
 
-    Ansible Is Agentless
+ ### Ansible Is Agentless
 
 Ansible is built around an agentless architecture. Typically, Ansible connects to the hosts it manages using OpenSSH or WinRM and runs tasks, often (but not always) by pushing out small programs called Ansible modules to those hosts. These programs are used to put the system in a specific desired state. Any modules pushed are removed when Ansible is finished with its tasks. It is possible to start using Ansible almost immediately, because no special agents need to be approved for use and then deployed to the managed hosts. Because there are no agents and no additional custom security infrastructure, Ansible is more efficient and more secure than other alternatives.
 
 # Ansible Components & Architecture
 
-    Control Nodes (Ansible-server)	
+ ### Control Nodes (Ansible-server)	
 
 Ansible is installed and run from a control node, and this machine also has copies of your Ansible project files. A control node could be an administrator's laptop, a system shared by a number of administrators or a server running Ansible Tower. Control-node should have Linux OS.
-
  
 
-    Managed Hosts (Ansible-Client)
+### Managed Hosts (Ansible-Client)
 
 Managed hosts are the slave nodes, which are connected to cntrol-node. managed-hosts can be more than one with any OS.
-
  
 
-    Ansible.cfg:
+### Ansible.cfg:
 
 This is the Ansible configuration file which manages the behaviour of ansible engine while communicatig with its inventory file and with the managed hosts.
 
- 
 
-    Inventory:
+### Inventory:
 
 An inventory defines a collection of hosts that Ansible will manage. These hosts can also be assigned to groups, which can be managed collectively. Groups can contain child groups, and hosts can be members of multiple groups.
-
  
 
-    Playbook:
+### Playbook:
 
 Instead of writing complex scripts, Ansible users create high-level plays to ensure a host or group of hosts are in a particular state. A play performs a series of tasks on the host or hosts, in the order specified by the play. These plays are expressed in YAML format in a text file. A file that contains one or more plays is called a playbook.
-
  
 
-    Ad-Hoc Commands:
+### Ad-Hoc Commands:
 
 An ad hoc command is a way to execute a single Ansible task quickly, one that you don't need to save to run again later. They're simple, one-line operations that can be run without writing a playbook.
 
 The Ansible architecture is agentless. Typically, when an administrator runs an Ansible Playbook or an ad hoc command, the control node connects to the managed host using SSH (by default) or WinRM. This means that clients don't need to have an Ansible-specific agent installed on managed hosts.
 
- 
-
-    Modules:
+### Modules:
 
 Each task runs a module, a small piece of code (written in Python, PowerShell, or some other language), with specific arguments. Each module is essentially a tool in your toolkit. Ansible ships with hundreds of useful modules that can perform a wide variety of automation tasks. They can act on system files, install software.
 
