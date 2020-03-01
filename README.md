@@ -1,4 +1,4 @@
-
+   Return to [devops](https://karthicbe1982.github.io/devops/)
 
 # Overview of Ansible
 ## What is Ansible?
@@ -279,8 +279,7 @@ IMPORTANT:
 
 If the inventory contains a host and a host group with the same name, the ansible command prints a warning and targets the host. The host group is ignored. ​	There are various ways to deal with this situation, the easiest being to ensure that host groups don't use the same names as hosts in the inventory.
 
-
- ### Dynamic Inventory: 
+### Dynamic Inventory: 
 
 Ansible inventory information can also be dynamically generated, using information provided by external databases. The open source community has written a number of dynamic inventory scripts that are available from the upstream Ansible project. If those scripts don't meet your needs, you can also write your own.
 
