@@ -1,6 +1,6 @@
    Return to [devops](https://karthicbe1982.github.io/devops/)
    
-[What is Ansible?](header-n6 What is Ansible?)
+[What is Ansible?](## header-n6)
 
 # Overview of Ansible
 ## What is Ansible?
