@@ -1,9 +1,7 @@
    Return to [devops](https://karthicbe1982.github.io/devops/)
    
-[What is Ansible?](header-n8) What is Ansible?
-`code`
-**code**
-I love: coffee.
+[What is Ansible?](header-n6 What is Ansible?)
+
 # Overview of Ansible
 ## What is Ansible?
 
