@@ -59,8 +59,7 @@ Each task runs a module, a small piece of code (written in Python, PowerShell, o
 When used in a task, a module generally ensures that some particular thing about the machine is in a particular state. For example, a task using one module may ensure that a file exists and has particular permissions and contents, while a task using a different module may make certain that a particular file system is mounted. If the system is not in that state, the task should put it in that state. If the system is already in that state, it should do nothing. If a task fails, Ansible's default behavior is to abort the rest of the playbook for the hosts that had a failure. Tasks, plays, and playbooks should be idempotent. This means that you should be able to run a playbook on the same hosts multiple times safely, and when your systems are in the correct state the playbook should make no changes when run.
 
  
-
-    Architecture:
+  Architecture:
 
 ​	!Screenshot_20190226-150243~2](https://gagankubsad.github.io/ansible_docs/images/Screenshot_20190226-150243~2.png)
 
@@ -73,53 +72,36 @@ For Ansible create 2 ec2 instances of RedHat in AWS. Name the instances as Contr
 Control-Node == Ansible Server
 
 Managed-Host == Ansible Client
-
  
 SSH Connection
 
-    Control-Node
+### Control-Node
 
-#su - root
+    #su - root
+    #ssh-keygen
+    #cd /root/.ssh
+    #cat id_rsa.pub
+    (copy the content of the file id_rsa.pub)
 
-#ssh-keygen
 
-#cd /root/.ssh
+### Managed-Host 
 
-#cat id_rsa.pub
-
-(copy the content of the file id_rsa.pub)
-
- 
-
-    Managed-Host 
-
-#useradd devops
-
-#passwd devops
-
-#su - devops
-
-#ssh-keygen
-
-#su - root
-
-#cp -rp /root/.ssh/authorized_keys /home/devops/.ssh
-
-#chown devops:devops /home/devops/.ssh/authorized_keys
-
-#vim /home/devops/.ssh/authorized_keys
-
-(paste the id_rsa.pub file content which is copied from the control-node)
-
-:wq!
+    #useradd devops
+    #passwd devops
+    #su - devops
+    #ssh-keygen
+    #su - root
+    #cp -rp /root/.ssh/authorized_keys /home/devops/.ssh
+    #chown devops:devops /home/devops/.ssh/authorized_keys
+    #vim /home/devops/.ssh/authorized_keys
+    (paste the id_rsa.pub file content which is copied from the control-node)
+    :wq!
 
  
 Assigning SUDO Privileges
 
 #vim /etc/sudoers
-
 devops ALL=(ALL) NOPASSWD: ALL
-
 :wq!
 
 Installing Ansible Package
